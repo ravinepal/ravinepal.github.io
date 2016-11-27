@@ -2,7 +2,8 @@
 
 body {
   padding:50px;
-  font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:16.5px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
   color:#000000;
   font-weight:300;
 }
@@ -13,7 +14,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+  margin:2px 0 20px;
+  font-style: none;
 }
 
 h1, h2, h3 {
@@ -21,7 +23,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:33px;
 }
 
 h2 {
@@ -37,7 +39,16 @@ a {
   font-weight:400;
   text-decoration:none;
 }
-
+a:visited{
+  color:#E00015;
+}
+a:hover{
+  color:#E00015;
+}
+a:active{
+  color:#E00015;
+  font-style:bold;
+}
 a small {
   font-size:11px;
   color:#777;
@@ -48,6 +59,33 @@ a small {
 .wrapper {
   width:860px;
   margin:0 auto;
+}
+
+.alignleft {
+  float: left;
+
+}
+.alignright {
+  float: right;
+
+}
+
+/* header border line */
+.header{
+   border-bottom: 2px solid #e5e5e5;
+
+}
+
+
+img.avatar { 
+  float:left;
+  max-width:100%;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
 }
 
 blockquote {
@@ -178,9 +216,9 @@ hr {
 
 footer {
   width:470px;
-  float:left;
-  position:fixed;
-  bottom:-25px;
+  float:right;
+  position:right;
+  bottom:-15px;
 }
 
 @media print, screen and (max-width: 960px) {
