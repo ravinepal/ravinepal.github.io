@@ -1,2 +1,2 @@
-# ravi.github.io
+# ravinepal.github.io
 My personal website 
