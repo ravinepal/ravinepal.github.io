@@ -1,0 +1,53 @@
+.card {
+    padding: 1.25rem;
+    margin: 0.5rem;
+    .title{
+        font-size: 19px;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+    .image_container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        align-content: center;
+    }
+    .image{
+        height: 300px;
+        width: 100%;
+        background-position:center center;
+        background-repeat: no-repeat;
+    }
+    .author{
+        span:first-child{
+            font-weight: 600;
+            &::after{
+                content: "\A";
+                white-space: pre;
+            }
+        }
+        margin-bottom: 0.5rem;
+    }
+    .credits{
+        text-align: center;
+    }
+    .content_wrapper{
+        margin-top: 1.25rem;
+    }
+}
+
+.breadcrumbs{
+    padding: 1rem;
+    span:not(:last-child){
+        margin-right: 1rem;
+        &::after{
+            margin-left: 1rem;
+            content: ">";
+            white-space: pre;
+        }
+    }
+    span:last-child{
+        color: gray;
+    }
+}

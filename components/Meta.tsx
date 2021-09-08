@@ -10,7 +10,7 @@ const Meta = () => {
         name="description"
         content={`Ravi Kumar, @RaviNepal's Personal Portfilio.`}
       />
-              <link rel="icon" href="/images/ravi.png" />
+              <link rel="icon" href="/images/ravi.jpg" />
       <meta property="og:image" content={''} />
       </Head>
   )

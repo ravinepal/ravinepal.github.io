@@ -1,0 +1,34 @@
+.card {
+    border: 1px solid #9999993f;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin: 0.5rem;
+    .title{
+        font-size: 19px;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+    .image_container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        align-content: center;
+    }
+    .image{
+        height: 300px;
+        width: 100%;
+        background-position:center center;
+        background-repeat: no-repeat;
+    }
+    .author{
+        span:first-child{
+            font-weight: 600;
+            &::after{
+                content: "\A";
+                white-space: pre;
+            }
+        }
+        margin-bottom: 0.5rem;
+    }
+}

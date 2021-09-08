@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import { Layout } from '../components/Layout'
-
+import Image from 'next/image'
 const Home: NextPage = () => {
   return (
     <Layout>
-      <img  className="img-circle avatar" alt="Ravi Kumar" src="/images/ravi.png" />
+      <br/>
+      <Image width="200" height="200" className="img-circle avatar" alt="Ravi Kumar" src="/images/ravi.jpg" />
       <section>
         <div style={{fontWeight:'normal'}}>
 
