@@ -1,3 +1,4 @@
+import { Footer } from "./Footer"
 import { Header } from "./Header"
 import Meta from "./Meta"
 
@@ -7,6 +8,7 @@ export const Layout:React.FC = ({children}) => {
             <Header/>
         <Meta/>
         {children}
+        <Footer/>
         </div>
     )
 }
