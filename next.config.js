@@ -2,7 +2,4 @@
 module.exports = {
   reactStrictMode: true,
   trailingSlash: true,
-  images:{
-    domains: ['miro.medium.com']
-  }
 }
