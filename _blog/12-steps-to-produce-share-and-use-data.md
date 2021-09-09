@@ -11,7 +11,6 @@ tags:
 date: "May 15, 2018"
 author:
   name: Ravi Kumar
-  email: ravi@codefornepal.org
   picture: '/images/ravi.jpg'
 ogImage:
   url: 'https://miro.medium.com/max/1280/1*e5gMrSg80GOoFo5OZdui7g.jpeg'
