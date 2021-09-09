@@ -8,7 +8,6 @@ export const Layout:React.FC = ({children}) => {
             <Header/>
         <Meta/>
         {children}
-        <Footer/>
         </div>
     )
 }
