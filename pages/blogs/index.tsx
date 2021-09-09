@@ -17,6 +17,9 @@ const Blogs: NextPage<BlogProps> = ({blogs}) => {
           </a>
           </Link>
       ))}
+      </Layout>
+      )
+      }
 
 export default Blogs
 
