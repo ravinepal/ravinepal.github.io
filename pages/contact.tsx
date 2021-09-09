@@ -1,9 +1,12 @@
 import type { NextPage } from 'next'
 import { Layout } from '../components/Layout'
-
-const Home: NextPage = () => {
+import Head from 'next/head'
+const Contact: NextPage = () => {
   return (
     <Layout>
+       <Head>
+        <title>Contact</title>
+        </Head>
       <span style={{fontWeight:'normal'}}/>
 <p> <br/> Here are a few ways to contact Ravi: <br/></p>
 
@@ -25,4 +28,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Contact

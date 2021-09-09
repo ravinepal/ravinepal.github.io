@@ -1,9 +1,13 @@
 import type { NextPage } from 'next'
 import { Layout } from '../components/Layout'
 import Link from 'next/link'
-const Home: NextPage = () => {
+import Head from 'next/head'
+const Speaking: NextPage = () => {
   return (
     <Layout>
+       <Head>
+        <title>Speaking</title>
+        </Head>
       <span style={{fontWeight:'normal'}}>
 
 <p> <br/> Here are selected speaking engagements — topics include open data, civic technology, entrepreneurship, social media, social good, strategic crisis communications, youth empowerment, and digtial literacy. <Link href="/contact"> Contact</Link> for availability. </p>
@@ -60,4 +64,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Speaking

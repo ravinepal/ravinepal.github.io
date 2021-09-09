@@ -1,9 +1,12 @@
 import type { NextPage } from 'next'
 import { Layout } from '../components/Layout'
-
-const Home: NextPage = () => {
+import Head from 'next/head'
+const Projects: NextPage = () => {
   return (
     <Layout>
+       <Head>
+        <title>Projects</title>
+        </Head>
 <p> </p> 
 <span style={{fontWeight:'normal'}}> <p> For almost a decade, in addition to his day job, Ravi has been working to primarily do two things: launch and scale up non-profits to help those who are disadvantaged, and use civic technology to build products to increase digital literacy, access to information, and the use of data. Here are some selected projects: <br/> </p>
 <ul>
@@ -32,4 +35,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Projects

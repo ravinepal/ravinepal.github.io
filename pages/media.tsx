@@ -1,9 +1,12 @@
 import type { NextPage } from 'next'
 import { Layout } from '../components/Layout'
-
-const Home: NextPage = () => {
+import Head from 'next/head'
+const Media: NextPage = () => {
   return (
     <Layout>
+       <Head>
+        <title>Media</title>
+        </Head>
    <span style={{fontWeight:'normal'}}>
 
 <p> <br/> Selected media:<br/></p>
@@ -43,4 +46,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Media
