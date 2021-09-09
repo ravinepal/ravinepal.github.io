@@ -20,7 +20,7 @@ jobs:
         env:
           CI: true
       - run: cp -r ./main/out .
-      - run: cp CNAME ./out
+      - run: cp ./main/CNAME ./out
       - run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
