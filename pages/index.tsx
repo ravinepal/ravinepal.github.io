@@ -3,8 +3,8 @@ import type { NextPage } from 'next'
 import { Layout } from '../components/Layout'
 const Home: NextPage = () => {
   return (
-      <br> 
-       <br/>
+      <Layout>
+        <br> <br/>
       <img width="200" height="200" className="img-circle avatar" alt="Ravi Kumar" src="/images/ravi.jpg" />
       <section>
         <div style={{fontWeight:'normal'}}>
@@ -28,7 +28,6 @@ const Home: NextPage = () => {
 
 <p>Connect with him on Twitter <a href="https://twitter.com/RaviNepal" target="_blank">@RaviNepal</a>.</p>
 </div>
-</section>
     </Layout>
   )
 }
