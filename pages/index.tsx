@@ -3,7 +3,6 @@ import type { NextPage } from 'next'
 import { Layout } from '../components/Layout'
 const Home: NextPage = () => {
   return (
-    <Layout> <Layout/>
       <br> 
        <br/>
       <img width="200" height="200" className="img-circle avatar" alt="Ravi Kumar" src="/images/ravi.jpg" />
