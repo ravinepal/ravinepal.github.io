@@ -4,7 +4,8 @@ import { Layout } from '../components/Layout'
 const Home: NextPage = () => {
   return (
     <Layout>
-      <br/>
+      <br> 
+       <br/>
       <img width="200" height="200" className="img-circle avatar" alt="Ravi Kumar" src="/images/ravi.jpg" />
       <section>
         <div style={{fontWeight:'normal'}}>
