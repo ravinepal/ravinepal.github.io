@@ -19,7 +19,11 @@ const Home: NextPage = () => {
           </p>
           <p>
             At the World Bank, Ravi serves as Team Leader for the
-            <a href="https://www.worldbank.org/dataliteracy" target="_blank">
+            <a
+              href="https://www.worldbank.org/dataliteracy"
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
               Data Use and Literacy Program{" "}
             </a>{" "}
@@ -37,6 +41,7 @@ const Home: NextPage = () => {
             <a
               href="https://www.worldbank.org/en/news/video/2020/05/23/increasing-the-use-of-data-for-prosperous-nepal"
               target="_blank"
+              rel="noreferrer"
             >
               {" "}
               open data and data use{" "}
@@ -66,18 +71,22 @@ const Home: NextPage = () => {
           <p>
             As a social entrepreneur, Ravi has founded and led two non-profits,
             including{" "}
-            <a href="https://codefornepal.org/" target="_blank">
+            <a
+              href="https://codefornepal.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Code for Nepal,{" "}
             </a>
             . In these ventures, he has helped make data accessible, increased
             digital and data literacy among thousands of youths, and rebuilt
             dozens of schools in Nepal. He holds a master’s degree from{" "}
-            <a href="http://www.columbia.edu" target="blank">
+            <a href="http://www.columbia.edu" target="_blank" rel="noreferrer">
               {" "}
               Columbia University in New York{" "}
             </a>{" "}
             and a bachelor’s degree with honors from{" "}
-            <a href="http://www.bvu.edu/" target="blank">
+            <a href="http://www.bvu.edu/" target="_blank" rel="noreferrer">
               Buena Vista University
             </a>
             .
@@ -88,7 +97,11 @@ const Home: NextPage = () => {
           </p>
           <p>
             Connect with him on Twitter{" "}
-            <a href="https://twitter.com/RaviNepal" target="_blank">
+            <a
+              href="https://twitter.com/RaviNepal"
+              target="_blank"
+              rel="noreferrer"
+            >
               @RaviNepal
             </a>
             .
