@@ -4,7 +4,7 @@ export const Header = () => {
         <div className="header">
           <h1>Ravi Kumar, <a href="https://twitter.com/RaviNepal" rel="noreferrer" target="_blank">@RaviNepal</a></h1>
            <p className ="alignright">
-               <Link href="/"> Home </Link> <Link href="/speaking"> | Speaking </Link> <Link href="/blogs"> | Blog </Link> <Link href="/media"> | Media </Link>
+               <Link href="/"> Home </Link> <Link href="/speaking"> | Speaking </Link> <Link href="/blogs"> | Blog </Link> <Link href="/media"> | Media </Link></p>
         <div style={{clear: 'both'}}></div>
         </div>
     )
