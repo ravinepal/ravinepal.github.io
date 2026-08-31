@@ -1,0 +1,4 @@
+adm1_pcode,adm1_name,adm2_pcode,adm2_name,adm3_pcode,adm3_name,adm4_pcode,adm4_name,ward_number,boundary_source_id
+MOCK-P1,Sample Province,MOCK-P1-D1,Sample District,MOCK-P1-D1-L1,Sample Rural Municipality,MOCK-P1-D1-L1-W01,Ward 1,1,mock-boundary-source
+MOCK-P1,Sample Province,MOCK-P1-D1,Sample District,MOCK-P1-D1-L1,Sample Rural Municipality,MOCK-P1-D1-L1-W02,Ward 2,2,mock-boundary-source
+MOCK-P1,Sample Province,MOCK-P1-D1,Sample District,MOCK-P1-D1-L1,Sample Rural Municipality,MOCK-P1-D1-L1-W03,Ward 3,3,mock-boundary-source

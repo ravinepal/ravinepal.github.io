@@ -1,0 +1,4 @@
+source_id,title,publisher,url_or_reference,retrieved_date,access_note
+# One row per cited source. See schema/source_citation.schema.json.
+# Example (delete before use):
+# ndrrma-bipad-2026-08-29,BIPAD Portal incident report,National Disaster Risk Reduction and Management Authority (NDRRMA),https://bipadportal.gov.np/,2026-08-30,

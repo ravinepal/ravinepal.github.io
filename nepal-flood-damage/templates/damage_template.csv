@@ -1,0 +1,4 @@
+event_id,adm4_pcode,indicator,value,unit,report_date,source_id,verification_level,confidence_note
+# One row per ward per event per damage indicator. See schema/damage_record.schema.json for the controlled vocabulary of `indicator` and `verification_level`.
+# Example (delete before use):
+# 2026-08-koshi-floods,NP3501010010,houses_destroyed,12,count,2026-08-29,ndrrma-bipad-2026-08-29,verified_official,

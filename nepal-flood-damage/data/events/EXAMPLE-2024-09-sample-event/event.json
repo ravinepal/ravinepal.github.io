@@ -1,0 +1,12 @@
+{
+  "event_id": "EXAMPLE-2024-09-sample-event",
+  "name": "EXAMPLE event (fictitious, for format demonstration only)",
+  "hazard_type": "flood",
+  "date_start": "2024-09-15",
+  "date_end": "2024-09-18",
+  "snapshot_stage": "rapid",
+  "snapshot_label": "Rapid assessment -- preliminary, official sources only (illustrative mock data, not real)",
+  "affected_adm1_pcodes": ["MOCK-P1"],
+  "affected_adm2_pcodes": ["MOCK-P1-D1"],
+  "notes": "This entire event is fictitious. It demonstrates the event.json format and gives scripts/validate_data.py and scripts/aggregate.py something to run against. Do not cite any figure from this folder as real."
+}
