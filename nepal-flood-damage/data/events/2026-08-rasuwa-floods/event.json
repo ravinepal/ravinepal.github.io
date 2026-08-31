@@ -1,0 +1,63 @@
+{
+  "event_id": "2026-08-rasuwa-floods",
+  "name": "August 2026 Rasuwa / Trishuli corridor floods",
+  "hazard_type": "flood",
+  "reported_trigger": "Reported glacier collapse on Langtang Lirung, associated with a detected tremor of approximately Ms 5.2 (per secondary reporting -- not independently confirmed in this session).",
+  "date_start": "2026-08-26",
+  "date_end": null,
+  "snapshot_stage": "rapid",
+  "snapshot_label": "Rapid, provisional -- see README.md for sourcing limitations before treating any figure here as final.",
+  "geographic_scope": {
+    "primary_province": "Bagmati Province",
+    "primary_district": "Rasuwa",
+    "wards_confirmed_this_session": [
+      "Timure -- Ward 2, Gosaikunda Rural Municipality, Rasuwa (confirmed via source wiki-timure-search)",
+      "Syabrubesi -- Ward 5, Gosaikunda Rural Municipality, Rasuwa (single-source claim, provisional -- see source search-syabrubesi-ward5)"
+    ],
+    "locations_named_in_reporting_ward_unconfirmed": [
+      "Rasuwagadhi -- sources disagree on ward (Gosaikunda RM ward 1 vs ward 2); intentionally excluded from admin_boundary_provisional.csv until resolved -- see source search-rasuwagadhi-ward-disputed"
+    ],
+    "wider_corridor_districts_reported_affected_not_disaggregated": [
+      "Nuwakot", "Dhading", "Gorkha", "Chitwan"
+    ]
+  },
+  "national_context_not_disaggregated": [
+    {
+      "indicator": "deaths",
+      "value": 903,
+      "unit": "persons",
+      "geographic_scope": "Nepal (national total, all affected districts combined -- NOT specific to Rasuwa district or any ward)",
+      "as_of_date": "2026-08-30",
+      "source_id": "wikipedia-2026-nepal-floods-search",
+      "note": "Figure is 5 days post-event and explicitly likely to change as search-and-rescue continues. Do not attribute to a specific ward or district without a disaggregated source."
+    },
+    {
+      "indicator": "missing",
+      "value": 4247,
+      "unit": "persons",
+      "geographic_scope": "Nepal (national total)",
+      "as_of_date": "2026-08-30",
+      "source_id": "wikipedia-2026-nepal-floods-search",
+      "note": "Same caveats as deaths above."
+    },
+    {
+      "indicator": "affected_persons",
+      "value": 50000,
+      "unit": "persons",
+      "geographic_scope": "Nepal (national total, described as 'at least')",
+      "as_of_date": "2026-08-30",
+      "source_id": "wikipedia-2026-nepal-floods-search",
+      "note": "Includes an estimated 17,000 children, per the same source."
+    },
+    {
+      "indicator": "hydropower_solar_projects_damaged",
+      "value": 14,
+      "unit": "count",
+      "geographic_scope": "Trishuli corridor (multi-district, not disaggregated)",
+      "as_of_date": "2026-08-30",
+      "source_id": "wikipedia-2026-nepal-floods-search",
+      "note": "Combined capacity reported as approximately 748 MW."
+    }
+  ],
+  "notes": "This event folder deliberately does NOT contain a populated ward-level damage_record table. Every source reachable in this session (WebSearch snippets only -- data.humdata.org, reliefweb.int, icimod.org, nrcs.org, en.wikipedia.org, and other primary/secondary sources were all blocked by this session's network egress policy) gave only national or multi-district aggregate figures, never a ward- or even district-level breakdown for Rasuwa specifically. Publishing those national totals as if they belonged to Timure or Syabrubesi would misattribute a national toll to two named wards -- exactly what METHODOLOGY.md section 7 (no data vs. zero, no silent imputation) prohibits. See README.md in this folder for what is needed to populate real damage_record rows."
+}

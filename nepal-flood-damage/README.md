@@ -11,11 +11,17 @@ and the publishing plan.
 
 ## Status
 
-This is a **framework and schema release** (v0.1) — not yet populated with a
-real event's data. See [`CHANGELOG.md`](./CHANGELOG.md). The
-`data/events/EXAMPLE-2024-09-sample-event/` folder contains a small,
-clearly-labeled **mock** dataset used only to demonstrate the format and
-exercise the validation/aggregation scripts — it is not real damage data.
+Framework release (v0.1) plus one real, in-progress event. See
+[`CHANGELOG.md`](./CHANGELOG.md).
+
+- `data/events/EXAMPLE-2024-09-sample-event/` — a small, clearly-labeled
+  **mock** dataset used only to demonstrate the format and exercise the
+  validation/aggregation scripts. Not real data.
+- `data/events/2026-08-rasuwa-floods/` — the **real** August 2026 Rasuwa
+  district floods, at **rapid/provisional** status: confirmed ward
+  references for Timure and Syabrubesi, but no ward-level damage figures
+  yet (only national/multi-district totals were reachable so far — see that
+  folder's `README.md` for exactly what's missing and how to complete it).
 
 ## Layout
 
@@ -44,6 +50,9 @@ python scripts/validate_data.py data/events/EXAMPLE-2024-09-sample-event
 
 # Roll ward-level figures up to local level / district / province
 python scripts/aggregate.py data/events/EXAMPLE-2024-09-sample-event
+
+# Check the real (but still incomplete) Rasuwa event
+python scripts/validate_data.py data/events/2026-08-rasuwa-floods
 ```
 
 ## Adding a real event
