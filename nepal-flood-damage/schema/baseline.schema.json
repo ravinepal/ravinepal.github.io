@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ravinepal.github.io/nepal-flood-damage/schema/baseline.schema.json",
+  "title": "Baseline (pre-flood) indicator row",
+  "description": "One row per ward per indicator, describing what existed before any flood event. See METHODOLOGY.md section 4.",
+  "type": "object",
+  "required": ["adm4_pcode", "indicator", "value", "unit", "as_of_date", "source_id"],
+  "additionalProperties": false,
+  "properties": {
+    "adm4_pcode": {
+      "type": "string",
+      "description": "Ward P-code, joining to admin_boundary.adm4_pcode."
+    },
+    "indicator": {
+      "type": "string",
+      "description": "Controlled vocabulary of baseline indicators. Propose an addition via CONTRIBUTING.md rather than inventing a free-text label.",
+      "enum": [
+        "population_total",
+        "households_total",
+        "houses_total",
+        "houses_mud_bonded",
+        "houses_cement_bonded",
+        "houses_rcc_frame",
+        "houses_other_construction",
+        "businesses_total",
+        "persons_engaged_total",
+        "schools_total",
+        "school_enrollment_total",
+        "health_facilities_total",
+        "road_km_strategic",
+        "road_km_local",
+        "bridges_total",
+        "irrigation_structures_total",
+        "cropland_hectares"
+      ]
+    },
+    "value": {
+      "type": "number",
+      "minimum": 0,
+      "description": "The baseline count or quantity."
+    },
+    "unit": {
+      "type": "string",
+      "description": "e.g. 'persons', 'households', 'count', 'km', 'hectares'."
+    },
+    "as_of_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Reference date of the underlying source (e.g. the Census 2021 reference date), not the date this row was entered."
+    },
+    "source_id": {
+      "type": "string",
+      "description": "References a source_citation.source_id."
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional free-text caveat, e.g. 'Interpolated from Local Level total; ward-level breakdown not published.'"
+    }
+  }
+}

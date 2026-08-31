@@ -1,0 +1,4 @@
+adm4_pcode,indicator,value,unit,as_of_date,source_id,note
+# One row per ward per baseline indicator. See schema/baseline.schema.json for the controlled vocabulary of `indicator` values.
+# Example (delete before use):
+# NP3501010010,population_total,4213,persons,2021-06-22,census-2021-nso,

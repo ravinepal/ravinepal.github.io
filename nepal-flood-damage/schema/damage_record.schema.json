@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ravinepal.github.io/nepal-flood-damage/schema/damage_record.schema.json",
+  "title": "Damage / impact record",
+  "description": "One row per ward per event per indicator, describing what was damaged or affected. See METHODOLOGY.md sections 5-7.",
+  "type": "object",
+  "required": ["event_id", "adm4_pcode", "indicator", "value", "unit", "report_date", "source_id", "verification_level"],
+  "additionalProperties": false,
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Matches the id in that event's event.json, e.g. '2026-08-koshi-floods'."
+    },
+    "adm4_pcode": {
+      "type": "string",
+      "description": "Ward P-code, joining to admin_boundary.adm4_pcode. A baseline row must exist for the same ward and the matching baseline indicator (see CONTRIBUTING.md)."
+    },
+    "indicator": {
+      "type": "string",
+      "description": "Controlled vocabulary of damage indicators, deliberately mirroring the baseline indicators they are compared against.",
+      "enum": [
+        "houses_destroyed",
+        "houses_partially_damaged",
+        "households_displaced",
+        "deaths",
+        "missing",
+        "injured",
+        "displaced_persons",
+        "schools_damaged",
+        "schools_destroyed",
+        "students_affected",
+        "health_facilities_damaged",
+        "road_km_damaged",
+        "road_km_destroyed",
+        "bridges_damaged",
+        "irrigation_structures_damaged",
+        "businesses_damaged",
+        "workers_affected",
+        "cropland_hectares_affected",
+        "livestock_lost"
+      ]
+    },
+    "value": {
+      "type": "number",
+      "minimum": 0,
+      "description": "The reported count or quantity."
+    },
+    "unit": {
+      "type": "string",
+      "description": "e.g. 'persons', 'households', 'count', 'km', 'hectares'."
+    },
+    "report_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the underlying figure was collected/reported, not the date this row was entered."
+    },
+    "source_id": {
+      "type": "string",
+      "description": "References a source_citation.source_id."
+    },
+    "verification_level": {
+      "type": "string",
+      "enum": ["verified_official", "cluster_estimate", "media_corroborated", "unverified"],
+      "description": "See CONTRIBUTING.md. 'unverified' rows must not be included in published totals/rates."
+    },
+    "confidence_note": {
+      "type": "string",
+      "description": "Optional free-text caveat, e.g. 'District total only, not yet disaggregated to ward.'"
+    }
+  }
+}

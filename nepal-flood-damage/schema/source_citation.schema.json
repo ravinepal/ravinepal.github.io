@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ravinepal.github.io/nepal-flood-damage/schema/source_citation.schema.json",
+  "title": "Source citation",
+  "description": "One entry per cited source. Referenced by baseline and damage_record rows via source_id.",
+  "type": "object",
+  "required": ["source_id", "title", "publisher", "url_or_reference", "retrieved_date"],
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "description": "Short unique identifier, e.g. 'ndrrma-bipad-2026-08-30'.",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "title": {
+      "type": "string",
+      "description": "Name of the report/dataset/portal, e.g. 'BIPAD Portal incident report'."
+    },
+    "publisher": {
+      "type": "string",
+      "description": "Issuing body, e.g. 'National Disaster Risk Reduction and Management Authority (NDRRMA)'."
+    },
+    "url_or_reference": {
+      "type": "string",
+      "description": "URL, or a physical/document reference if not web-accessible (e.g. 'PDF sitrep #14, on file')."
+    },
+    "retrieved_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date this source was accessed/retrieved by this project (ISO 8601, YYYY-MM-DD)."
+    },
+    "access_note": {
+      "type": "string",
+      "description": "Optional note, e.g. 'Publisher page since removed; PDF archived locally.'"
+    }
+  }
+}

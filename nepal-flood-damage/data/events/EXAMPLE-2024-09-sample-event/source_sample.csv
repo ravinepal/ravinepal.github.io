@@ -1,0 +1,10 @@
+source_id,title,publisher,url_or_reference,retrieved_date,access_note
+mock-boundary-source,Fictitious admin boundary reference (illustrative),N/A -- mock,https://example.invalid/mock-boundary,2024-01-10,Not a real COD-AB extract; format demonstration only.
+census-2021-mock,National Population and Housing Census 2021 (illustrative baseline figures),National Statistics Office,https://censusnepal.cbs.gov.np/,2024-01-10,Mock baseline figures for format demonstration only -- not real census extracts.
+economic-census-2018-mock,National Economic Census 2018 (illustrative baseline figures),National Statistics Office,https://censusnepal.cbs.gov.np/,2024-01-10,Mock baseline figures for format demonstration only.
+school-census-mock,School census / Flash Report (illustrative baseline figures),Department of Education,https://moe.gov.np/,2024-01-10,Mock baseline figures for format demonstration only.
+dohs-hmis-mock,HMIS facility registry (illustrative baseline figures),Department of Health Services,https://dohs.gov.np/,2024-01-10,Mock baseline figures for format demonstration only.
+dor-road-inventory-mock,Road and infrastructure inventory (illustrative baseline figures),Department of Roads / Department of Local Infrastructure,https://dor.gov.np/,2024-01-10,Mock baseline figures for format demonstration only.
+neoc-sitrep-14,National Emergency Operations Center Situation Report #14 (illustrative/mock),Ministry of Home Affairs -- NEOC,https://drrportal.gov.np/,2024-09-21,Mock citation for format demonstration only -- not a real report.
+shelter-cluster-rapid-2024-09-25,Shelter Cluster Rapid Assessment (illustrative/mock),Shelter Cluster Nepal,https://sheltercluster.org/nepal,2024-09-26,Mock citation for format demonstration only -- not a real report.
+unverified-local-report-mock,Unconfirmed local report relayed via phone (illustrative/mock),N/A -- mock,N/A,2024-09-19,Illustrates an 'unverified' source entry; deliberately unconfirmed even in this mock dataset.

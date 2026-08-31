@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ravinepal.github.io/nepal-flood-damage/schema/admin_boundary.schema.json",
+  "title": "Administrative boundary reference row",
+  "description": "One row per ward, giving the full P-code hierarchy and names. Sourced from the official COD-AB boundary set (see data/admin-boundaries/README.md) -- never hand-entered.",
+  "type": "object",
+  "required": ["adm1_pcode", "adm2_pcode", "adm3_pcode", "adm4_pcode", "adm4_name", "ward_number"],
+  "additionalProperties": false,
+  "properties": {
+    "adm1_pcode": { "type": "string", "description": "Province P-code." },
+    "adm1_name": { "type": "string", "description": "Province name." },
+    "adm2_pcode": { "type": "string", "description": "District P-code." },
+    "adm2_name": { "type": "string", "description": "District name." },
+    "adm3_pcode": { "type": "string", "description": "Local Level / Palika P-code." },
+    "adm3_name": { "type": "string", "description": "Local Level / Palika name." },
+    "adm4_pcode": { "type": "string", "description": "Ward P-code -- the primary key for all baseline and damage records." },
+    "adm4_name": { "type": "string", "description": "Ward label, e.g. 'Ward 10'." },
+    "ward_number": { "type": "integer", "minimum": 1, "description": "Ward number within its Local Level." },
+    "boundary_source_id": { "type": "string", "description": "source_id of the COD-AB release this row came from." }
+  }
+}
